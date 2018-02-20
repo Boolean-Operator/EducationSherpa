@@ -1,0 +1,27 @@
+{
+  "name": "edsherpa",
+  "version": "1.0.0",
+  "description": "Education Sherpa - School Choice Navigation tool application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Boolean-Operator/EducationSherpa.git"
+  },
+  "keywords": [
+    "school",
+    "choice"
+  ],
+  "author": "Mark Graybill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boolean-Operator/EducationSherpa/issues"
+  },
+  "homepage": "https://github.com/Boolean-Operator/EducationSherpa#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
