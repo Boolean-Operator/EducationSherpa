@@ -1,0 +1,44 @@
+CREATE A NEW REPOSITORY AND ACCESS IT ON C9
+
+Create a new, empty repository for your project on GitHub.
+    From your repository’s home page, copy the SSH link. 
+    By default GitHub shows the HTTPS link, you will need to toggle it to ssh first!
+    It will look something like:
+    
+      "git@github.com:yourname/yourrepository.git"
+      git@github.com:Boolean-Operator/join_us.git
+    
+
+Open your C9 project window, and go to the terminal.
+  Set your git config username: 
+    
+    git config --global user.name Boolean-Operator
+  
+
+Set your git config email (which should match your github account email):
+    
+    git config --global user.email marktgraybill@gamil.com
+    
+
+Make your current directory a git repository by running:
+    
+    git init
+    
+
+Using the SSH link you copied in step 7, add the remote repository as the origin:
+    
+    git remote add origin git@github.com:Boolean-Operator/join_us.git
+    
+
+Add your files and commits, as you normally would:
+    
+    git add .
+    git commit -m "First commit"
+    
+
+Push your changes:
+    
+    git push -u origin master
+    
+
+Admire your updated repository on GitHub

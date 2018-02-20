@@ -25,10 +25,12 @@ body {
   margin-top:0;
 }
 
+
 .jumbotron {
   position:relative;
   padding-top:15px;
   padding-bottom:15px;
+  height: 275px;
 }
 
 .jumbotron .container {
