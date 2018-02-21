@@ -7,11 +7,8 @@ var app = express();
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-request("https://maps.googleapis.com/maps/api/js?key=AIzaSyBoghMfd2fobTrImQGjCHOqNk8oDr2QOLE&libraries=places&callback=initMap", function (error, response, body) {
-  console.log('error: ', error);
-  console.log('statusCode: ', response);
-  console.log('body: ', body);
-  });
+
+
 
 app.get("/", function(req, res){
    res.render("home"); 

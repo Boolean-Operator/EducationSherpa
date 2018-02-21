@@ -30,7 +30,7 @@ body {
   position:relative;
   padding-top:15px;
   padding-bottom:15px;
-  height: 275px;
+  height: 175px;
 }
 
 .jumbotron .container {
@@ -66,13 +66,6 @@ body {
   padding:0 45px;
 }
 
-/* .notify {
-  width: 80%;
-  color: red;
-  border: 1px black solid;
-  border-radius: 10px;
-} */
-
 .btn {
   margin: 0 5%;
   padding: 2%;
@@ -85,7 +78,23 @@ body {
   margin: 7% 0;
   display: flex;
   justify-content: center;
+}
 
+
+/*partial/footer*/
+
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .25rem;
+  background-color: #ADB5C8;
+  color: #000;
+  font-family: "Arial";
+  text-align: center;
+  text-shadow: none;
 }
 
 /*  Choice.HTML*/
@@ -98,58 +107,55 @@ body {
 /*  Feeder.HTML*/
 .leftdiv {
   float: left;
-  width: 300px;
-}
-
-#map {
-  width: 500px;
-  height: 500px;
-  border: 1px solid blue;
-  float: right;
+  width: 50%;
 }
 
 .mytextbox {
   text-align: justify;
   font-size: 1.5em;
-  margin: 0 auto;
 }
 
-#locationField, #controls {
-  text-align: justify;
-  font-size: 1.5em;
-  width: 99%;
-
-}
-#autocomplete {
-  width: 80%;
-
-  margin: 3px auto;
-}
 .label {
   text-align: right;
   font-weight: bold;
   width: 100px;
   color: #303030;
 }
+
+#autocomplete {
+  width: 100%;
+  margin: 3px auto;
+}
+
+#locationField, #controls {
+  text-align: justify;
+  font-size: 1.5em;
+  width: 99%;
+}
+
 #address {
   display: block;
   float: left;
   border: 1px solid #000090;
   background-color: #f0f0ff;
-  width: 45%;
+  width: 99%;
   padding-right: 2px;
 }
+
 #address td {
   font-size: 10pt;
 }
+
 .field {
-  width: 99%;
+  width: 100%;
 }
+
 .slimField {
-  width: 80px;
+  width: 15%;
 }
+
 .wideField {
-  width: 200px;
+  width: 70%;
 }
 
 .submitBtn {
@@ -161,7 +167,17 @@ body {
   font-size: 1.5em;
 }
 
+#map {
+  width: 500px;
+  height: 500px;
+  border: 1px solid blue;
+  float: right;
+}
+
 /*School.HTML  */
+.container.address {
+  width: 35%;
+}
 
 .instructions {
   text-align: center;
