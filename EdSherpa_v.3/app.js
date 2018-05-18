@@ -1,8 +1,8 @@
 // app.js
 
-var express = require("express");
-var request = require("request");
-var app = express();
+let express = require("express");
+let request = require("request");
+let app = express();
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -20,20 +20,8 @@ app.get("/:page", function(req, res){
    res.render(page); 
    console.log(req.params);
    console.log("Request for the " + page + " page has been recieved.");
-//   res.send("Navigating School Choice Process"); 
+
 });
-
-// app.get("/feeder", function(req, res){
-//   res.send("Finding your Feeder School Page,  Input your Address and confirm on Google Maps API"); 
-//   console.log("Request at finding feeder school page.");
-   
-// });
-
-// app.get("/school", function(req, res){
-//   res.send("Finding a school that matches resources with you students needs."); 
-//   console.log("Request at finding school process.");
-
-// });
 
 
 app.get("*", function(req, res) {
@@ -44,6 +32,10 @@ app.get("*", function(req, res) {
 
 
 // Listen for PORT IP address
-app.listen(process.env.PORT, process.env.IP, function() {
+// app.listen(process.env.PORT, process.env.IP, function() {
+//     console.log("Hello, Dave.  I have started the server for you ... ");
+// });
+
+app.listen(3000, function() {
     console.log("Hello, Dave.  I have started the server for you ... ");
 });

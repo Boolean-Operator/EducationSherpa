@@ -4,7 +4,7 @@ body {
   text-align: center;
 }
 
-/*  Header.ejs partial Jumbotronr*/
+/*  Header.ejs partial Jumbotron*/
 
 .jumbotron-billboard .img {
     margin-bottom: 0px;
@@ -97,11 +97,24 @@ body {
   text-shadow: none;
 }
 
+/* About.HTML*/
+h3, h4, p, li {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.about {
+  text-align: left;
+}
+
+
+
+
 /*  Choice.HTML*/
 .col-lg-3 {
-  margin: 0 auto;
+  margin:20px auto;
   background-color: darkseagreen;
-  height: 200px;
+  /* height: 200px; */
 }
 
 /*  Feeder.HTML*/
