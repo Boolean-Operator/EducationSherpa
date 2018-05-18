@@ -26,9 +26,9 @@ app.get("/:page", function(req, res){
 });
 
 
-// app.get("*", function(req, res) {
-//     res.send("I'm sorry Dave, I'm afraid I can't do that.")
-// });
+app.get("*", function(req, res) {
+    res.send("I'm sorry Dave, I'm afraid I can't do that.")
+});
 
 
 app.get('/favicon.ico', (req, res) => res.status(204));
@@ -39,6 +39,3 @@ app.listen(port, function() {
     console.log(`Hello, Dave.  I have started the server for you on port ${port}... `);
 });
 
-// app.listen(3000, function() {
-//     console.log("Hello, Dave.  I have started the server for you ... ");
-// });
