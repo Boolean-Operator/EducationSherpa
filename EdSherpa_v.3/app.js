@@ -4,6 +4,8 @@ let express = require("express");
 let request = require("request");
 let app = express();
 
+const port = process.env.PORT || 3000;
+
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -24,16 +26,17 @@ app.get("/:page", function(req, res){
 });
 
 
-app.get("*", function(req, res) {
-    res.send("I'm sorry Dave, I'm afraid I can't do that.")
-});
+// app.get("*", function(req, res) {
+//     res.send("I'm sorry Dave, I'm afraid I can't do that.")
+// });
 
 
+app.get('/favicon.ico', (req, res) => res.status(204));
 
 
 // Listen for PORT IP address
-app.listen(process.env.PORT, process.env.IP, function() {
-    console.log("Hello, Dave.  I have started the server for you ... ");
+app.listen(port, function() {
+    console.log(`Hello, Dave.  I have started the server for you on port ${port}... `);
 });
 
 // app.listen(3000, function() {
