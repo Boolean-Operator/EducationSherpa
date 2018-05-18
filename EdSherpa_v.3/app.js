@@ -32,10 +32,10 @@ app.get("*", function(req, res) {
 
 
 // Listen for PORT IP address
-// app.listen(process.env.PORT, process.env.IP, function() {
-//     console.log("Hello, Dave.  I have started the server for you ... ");
-// });
-
-app.listen(3000, function() {
+app.listen(process.env.PORT, process.env.IP, function() {
     console.log("Hello, Dave.  I have started the server for you ... ");
 });
+
+// app.listen(3000, function() {
+//     console.log("Hello, Dave.  I have started the server for you ... ");
+// });
