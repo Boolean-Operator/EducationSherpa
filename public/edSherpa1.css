@@ -1,0 +1,228 @@
+
+body {
+  padding-top: 70px;
+  text-align: center;
+}
+
+/*  Header.ejs partial Jumbotron*/
+
+.jumbotron-billboard .img {
+    margin-bottom: 0px;
+    opacity: 0.4;
+    color: #fff;
+    background: url("classroom1.png") top center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.jumbotron h1 {
+  margin-top:0;
+}
+
+
+.jumbotron {
+  position:relative;
+  padding-top:15px;
+  padding-bottom:15px;
+  height: 175px;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+}
+
+/*  Header.ejs partial Nav Bar*/
+.navbar-inverse {
+  background: lightblue;
+  color: black;
+
+}
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+  color:black;
+
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  padding:0 45px;
+}
+
+.btn {
+  margin: 0 5%;
+  padding: 2%;
+  border: 3px solid black;
+  width: 15%;
+  text-align: center;
+}
+
+.btngroup {
+  margin: 7% 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*partial/footer*/
+
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .25rem;
+  background-color: #ADB5C8;
+  color: #000;
+  font-family: "Arial";
+  text-align: center;
+  text-shadow: none;
+}
+
+/* About.HTML*/
+h3  {
+  text-align: left;
+  margin-top: 20px;
+}
+
+h4, li {
+  text-align: left;
+}
+
+
+.about {
+  text-align: left;
+}
+
+
+
+
+/*  Choice.HTML*/
+.timeline {
+  border: 1px solid black;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.col-lg-3 {
+  margin: auto;
+  text-align: center;
+  background-color: darkseagreen;
+  /* height: 100%; */
+}
+
+/*  Feeder.HTML*/
+.leftdiv {
+  float: left;
+  width: 50%;
+}
+
+.mytextbox {
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+.label {
+  text-align: right;
+  font-weight: bold;
+  width: 100px;
+  color: #303030;
+}
+
+#autocomplete {
+  width: 100%;
+  margin: 3px auto;
+}
+
+#locationField, #controls {
+  text-align: justify;
+  font-size: 1.5em;
+  width: 99%;
+}
+
+#address {
+  display: block;
+  float: left;
+  border: 1px solid #000090;
+  background-color: #f0f0ff;
+  width: 99%;
+  padding-right: 2px;
+}
+
+#address td {
+  font-size: 10pt;
+}
+
+.field {
+  width: 100%;
+}
+
+.slimField {
+  width: 15%;
+}
+
+.wideField {
+  width: 70%;
+}
+
+.submitBtn {
+  display: block;
+  float: left;
+  margin: 20px;
+  padding: 15px;
+  width: 15%;
+  font-size: 1.5em;
+}
+
+#map {
+  width: 500px;
+  height: 500px;
+  border: 1px solid blue;
+  float: right;
+}
+
+/*School.HTML  */
+.container.address {
+  width: 35%;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+#dropdownMenu1 {
+  margin: 60 60 0 60;
+}
+
+/*  Results.HTML*/
+.results{
+  border: 1px solid black;
+  border-radius: 7px;
+  margin: 3px;
+}
