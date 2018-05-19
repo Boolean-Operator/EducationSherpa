@@ -8,8 +8,6 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 
-
-
 app.get("/", function(req, res){
    res.render("home"); 
    console.log("Home Page hit");
@@ -23,14 +21,11 @@ app.get("/:page", function(req, res){
 
 });
 
-
 app.get("*", function(req, res) {
     res.send("I'm sorry Dave, I'm afraid I can't do that.")
 });
 
-
 app.get('/favicon.ico', (req, res) => res.status(204));
-
 
 // Listen for PORT IP address
 app.listen(port, function() {
