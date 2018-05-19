@@ -42,3 +42,21 @@ Push your changes:
     
 
 Admire your updated repository on GitHub
+
+
+
+Heroku
+
+login to Heroku
+
+$>heroku keys:add
+
+? Would you like to upload to Heroku ? YES
+
+$>heroku keys   - to print all of the keys Heroku has
+
+$>ssh -v git@heroku.com
+Authentication succeeded(publickey)
+
+$>git remote -v  
+
